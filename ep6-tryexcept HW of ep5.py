@@ -44,11 +44,13 @@ menubar.add_cascade(label='Help',menu=helpmenu)
 helpmenu.add_command(label='About',command=About)
 
 
+def Donate():
+	messagebox.showinfo('Donate','สวัสดีค่ะ สามารถโอนมาได้ทาง เลขที่บัญชี:72002930300039 Kbank ')
+
 #เพิ่ม Donate menu
 donatemenu = Menu(menubar,tearoff=0) #สร้าง Helpmanu เป็น object มาชุดหนี่ง เป็นก้อนสี่เหลี่ยม
 menubar.add_cascade(label='Donate',menu=donatemenu)
-
-
+donatemenu.add_command(label='Donate',command=Donate)
 
 ####################################################
 #notebookมาจากตัว ttk 
